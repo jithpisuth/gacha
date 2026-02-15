@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gacha Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Menu</a>
+    <a href="shop.html">Shop</a>
+</nav>
+
+<canvas id="bg"></canvas>
+
+<div class="game-container">
+    <h2>🎴 LIMITED BANNER: Neon Goddess</h2>
+
+    🎟 Tickets: <span id="tickets"></span>
+
+    <div class="result-box" id="result">?</div>
+
+    <div>
+        <button onclick="roll(1)">Pull x1</button>
+        <button onclick="roll(10)">Pull x10</button>
+    </div>
+
+    <div id="stats"></div>
+
+    <h3>🎒 Inventory</h3>
+    <div id="inventoryList"></div>
+
+    <h3>🏆 Achievements</h3>
+    <div id="achievementList"></div>
+
+    <h3>📈 Luck Analysis</h3>
+    <div id="analysis"></div>
+</div>
+
+<div id="cinematic"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
