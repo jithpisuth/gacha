@@ -1,0 +1,90 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:black;
+    color:white;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+nav{
+    padding:15px;
+    background:#111;
+}
+
+nav a{
+    color:cyan;
+    margin:0 15px;
+    text-decoration:none;
+}
+
+.menu-bg{
+    background:radial-gradient(circle,#111,#000);
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.menu-container{
+    text-align:center;
+}
+
+.glow-title{
+    font-size:50px;
+    color:cyan;
+    text-shadow:0 0 30px cyan;
+}
+
+.menu-btn{
+    padding:15px 30px;
+    margin:15px;
+    font-size:18px;
+    background:cyan;
+    border:none;
+    cursor:pointer;
+}
+
+.game-container{
+    padding:20px;
+}
+
+.result-box{
+    margin:30px auto;
+    font-size:32px;
+    height:60px;
+}
+
+.inventory-card{
+    display:inline-block;
+    padding:8px;
+    margin:5px;
+    width:120px;
+    border-radius:8px;
+}
+
+.r3{border:1px solid #777;}
+.r4{border:1px solid #4da6ff; box-shadow:0 0 10px #4da6ff;}
+.r5{border:1px solid gold; box-shadow:0 0 20px gold;}
+
+#cinematic{
+    position:fixed;
+    inset:0;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    font-size:50px;
+    opacity:0;
+    pointer-events:none;
+    transition:.4s;
+}
+
+.show{opacity:1;pointer-events:auto;}
+
+canvas{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+}
